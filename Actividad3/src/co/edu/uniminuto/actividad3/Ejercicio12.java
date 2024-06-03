@@ -1,7 +1,8 @@
 package co.edu.uniminuto.actividad3;
 
 public class Ejercicio12 {
-    /*Realizar un programa que genere una matriz 5x5, inicializarla en 2 e imprimirla.
+    /*12. Realizar un programa que genere una matriz 5x5, inicializarla en 2 
+    e imprimirla.
     */
     public static void main(String[] args) {
         
