@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Ejercicio3 {
      /**
- *Hacer un programa en Java que, dado un rango, por el usuario, se da número  
+ *3.Hacer un programa en Java que, dado un rango, por el usuario, se da número  
  * inicial y uno final (tomar en cuenta que el inicial debe ser menor que el 
  * final, hacer  la validación y volver a pedir los dos números si no cumple la 
  * condición) y sume  los números pares dentro del rango incluyendo el valor 
@@ -31,13 +31,14 @@ public class Ejercicio3 {
                     + "mayor al numero final");     
         }
         else{
+        System.out.println("Los numero pares entre "+numeroInicial+" y "
+                     +numeroFinal+" es: ");
         for(int i=numeroInicial;i<=numeroFinal;i++){
             
         if(i % 2 == 0){
              acumuladorPares+=i;
              suma = acumuladorPares+numeroInicial+numeroFinal;
-             System.out.println("Los numero pares entre "+numeroInicial+" y "
-                     +numeroFinal+" es: "+i);
+             System.out.println(i+" ");
         } 
       } 
       System.out.println("La suma de los numeros pares entre "+numeroInicial+

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ejercicio1 {
     /**
-     Hacer un rpograma en java que sume los sigueintes 25 numeros
+     1.Hacer un rpograma en java que sume los sigueintes 25 numeros
      * impares que le siguen a n e imprimir los 25 numeros y la suma.
      * @param args
      **/

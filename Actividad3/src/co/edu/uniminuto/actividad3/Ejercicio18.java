@@ -10,12 +10,7 @@ public class Ejercicio18 {
     */
    
    public static void main (String[] args){
-       
-       //caja de texto  -recolecta datos en string JOptionPane.showInputDialog
-       // pasar string a entero se debe usar parse
-       // casteo de datos String a Short
-       
-       short fila=0;
+              short fila=0;
        short columna=0;
        
        do{

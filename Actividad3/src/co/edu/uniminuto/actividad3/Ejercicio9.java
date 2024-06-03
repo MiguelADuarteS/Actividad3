@@ -4,44 +4,40 @@ import java.util.Scanner;
 
 public class Ejercicio9 {
  /**
- *Leer N cantidad de notas (validar rango de notas), 
+ *9. Leer N cantidad de notas (validar rango de notas), 
  * imprimir el promedio de las notas, 
  * la nota más alta y la más baja.
  */   
     public static void main (String[] args){
         Scanner leer = new Scanner(System.in);
-        //Definir variables
+
         int cantNotas;
-        float notas = 0; //almacenamiento de notas
-        float nota = 0; // nota indovidual
-        int acumuladorn = 1; //acumulador
+        float notas = 0;
+        float nota = 0; 
+        int acumuladorn = 1;
         float proNotas = 0;
         float notaMax = 0;
         float notaMin = 0;
        
         
         System.out.println("Ingrese cantidad de notas que desea promediar: ");
-        cantNotas = leer.nextInt(); // Cantidad de notas
+        cantNotas = leer.nextInt();
         
         for(int i=1; i <= cantNotas; i++){
         
-        // Leer notas
-        System.out.println("Introduzca la nota: "+acumuladorn);
+        System.out.println("Introduzca la nota: "+i);
         nota = leer.nextFloat();
-        notas += nota;
-        acumuladorn++;// Iteración
-        proNotas = notas / cantNotas;
-        
-        
-        if (i==0){
-        notaMax=nota;
-        notaMin=nota;
+        if(nota<0 || nota>5){
+            System.out.println("El rango de notas debe ser entre 0.0 y 5.0");
+            return;
         }
-        else if (nota>notaMax){
-        notaMax=nota; 
-        } 
-        else if(notaMin<nota){
-        notaMin=nota;
+        else{
+        notas += nota;
+        proNotas = notas / cantNotas;
+                
+        if (nota>notaMax)notaMax=nota;
+        if (nota<notaMin)notaMin=nota;
+        
         }
  }
         System.out.println("El promedio notas es: "+proNotas);

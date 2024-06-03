@@ -12,7 +12,8 @@ con los números impares partiendo desde n (n es dada por el usuario) y
        int numeroInicial=0;
        int numero = numeroInicial;
        
-       numeroInicial = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero inicial: "));
+       numeroInicial = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el "
+               + "numero inicial de la matriz este numero debe ser impar: "));
       
        short arrayBidimen[][] = new short[5][6];
                for(int x=0; x<5;x++){
